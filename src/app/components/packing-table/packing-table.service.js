@@ -91,7 +91,7 @@ angular.module('packingTable')
       if (length > 0) {
         for (var i = 0; i < length; i++) {
           var row = schedules[i];
-          var packedProduct = row.packedProduct;
+          var packedProduct = row.packedProduct || [];
           for (var j = 0; j < packedProduct.length; j++) {
             var key = packedProduct[j].productID;
             if (packed.hasOwnProperty(key)) {
