@@ -28,8 +28,8 @@
           </tr>
           <tr ng-if="schedulesRoundCtrl.roundToDisplay === round._id" class="bg-default" class="'animate'">
             <td colspan="7">
-              <div ng-repeat="day in schedulesRoundCtrl.displayRound track by $index " ng-if="schedulesRoundCtrl.displayRound.length > 0">
-                <h4 ng-bind="day.date | date: 'fullDate'"></h4>
+              <div ng-repeat="(deliveryDate, day) in schedulesRoundCtrl.groupedDailyDeliveries track by $index ">
+                <h4 ng-bind="deliveryDate | date: 'fullDate'"></h4>
                 <table class="table table-striped" ng-animate="'animate'">
                   <thead>
                     <tr>
