@@ -14,7 +14,10 @@
   </div>
 </div>
 <br/>
-<table class="table table-striped table-condensed table-bordered">
+<div class="alert alert-danger" ng-show="facDevCtrl.facRnd.packedProduct.length === 0">
+  <i class="fa-warning"></i> No products entered as packed for this facility, please contact admin.
+</div>
+<table class="table table-striped table-condensed table-bordered" ng-show="facDevCtrl.facRnd.packedProduct.length > 0">
   <tr>
     <th class="col-sm-2">Product</th>
     <th class="col-sm-2">On-hand Qty</th>
