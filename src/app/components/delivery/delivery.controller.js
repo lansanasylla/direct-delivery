@@ -26,6 +26,9 @@ angular.module('delivery')
         vm.arrivedAt = new Date().toJSON();
         vm.facilityKPI = vm.facRnd.facilityKPI;
       }
+      if(!angular.isArray(vm.facRnd.packedProduct)){
+        vm.facRnd.packedProduct = [];
+      }
     }
 
     init();

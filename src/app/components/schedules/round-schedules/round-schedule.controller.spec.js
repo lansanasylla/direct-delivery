@@ -49,7 +49,7 @@ describe('SchedulesRoundCtrl', function() {
   });
 
   it('Should expose SchedulesRoundCtrl.displayRound', function() {
-    expect(SchedulesRoundCtrl.displayRound).toBeDefined();
+    expect(SchedulesRoundCtrl.groupedDailyDeliveries).toBeDefined();
   });
 
   it('Should expose SchedulesRoundCtrl.roundToDisplay', function() {
