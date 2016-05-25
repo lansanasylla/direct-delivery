@@ -8,7 +8,7 @@
     "browser-sync": "~1.7.1",
     "chalk": "~0.5.1",
     "cordova-icon": "git+https://github.com/tlvince/cordova-icon.git#7926077d16d9d95d952fefacaf3155ce75b9dde0",
-    "cordova-lib": "^4.2.0",
+    "cordova-lib": "^6.2.0",
     "couch-compile": "^1.2.0",
     "coveralls": "^2.11.2",
     "crosswalk": "git+https://github.com/eHealthAfrica/crosswalk.git#da5f7b790130063166ddb1c5a69aa522a9d14c81",
